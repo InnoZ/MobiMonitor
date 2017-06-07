@@ -1,7 +1,10 @@
 en:
   locale_name: 'english'
 
-  service: 'InnoZ Rails'
+  service: 'Mobility Monitor'
+  service_subtitle: 'Current Data and Prognosis to the Mobility Market'
+  welcome: ''
+  welcome_text: ''
   learn_more: 'Learn more'
   contact_our_team: 'Contact our Mobility Simulations Team!'
   language: 'Language'
@@ -16,6 +19,14 @@ en:
       imprint: 'Imprint'
       about_us: 'About us'
       contact_us: 'Contact us'
+      economy: 'Economy'
+      multimodality: 'Multimodality'
+      shared_mobility: 'Shared Mobility'
+      electric_mobility: 'Electric Mobility'
+      digitalisation: 'Digitalisation'
+
+    about:
+      header: 'What sets us apart.'
 
     contact:
       contact_us: 'Get in touch'

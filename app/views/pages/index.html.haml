@@ -5,16 +5,14 @@
         .caption.vertical-center.text-left
           %h1.fadeInRight-1.dark-bg.light-color
             %span
-              InnoZ-Rails
+              = t('service')
             %br
-            %span
-              Ruby on Rails template
           %p.fadeInRight-2.light-color
-            A template for fast Rails startup
+            = t('service_subtitle')
 
 %section#introduction.light-bg
   .container.inner
     .row
       .col-xs-12
-        %h1 Welcome to the InnoZ-Rails template
-        %h3 Based on Ruby on Rails 5
+        %h1= t('welcome')
+        %h3= t('welcome_text')

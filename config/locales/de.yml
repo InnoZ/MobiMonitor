@@ -1,7 +1,10 @@
 de:
   locale_name: 'deutsch'
 
-  service: 'InnoZ Rails'
+  service: 'Mobilitätsmonitor'
+  service_subtitle: 'Aktuelle Daten und Prognosen zum Mobilitätsmarkt'
+  welcome: 'Willkommen auf dem InnoZ Mobilitätsmonitor'
+  welcome_text: 'Unsere tägliche Arbeit am InnoZ erfordert und erbringt eine große Menge an Daten zum innerdeutschen Mobilitätsmarkt. Diese sollen mit der Reihe des Mobilitätsmonitors in ihrer inhaltlichen Verbindung gesamthaft dargestellt werden. Mit dem Fachmagazin Internationales Verkehrswesen haben wir das dazu passende Publikationsmedium gefunden. Der Monitor lebt darüber hinaus von der gegenseitigen Wissensvermittlung unter Marktakteuren und Fachleuten. Wir möchten die Abbildungen und Statistiken auch auf diesem Weg zugänglich machen, um eine Debatte über die Weiterentwicklung der isolierten Verkehrsmärkte hin zu einem integrierten Mobilitätsmarkt anzuregen.'
   learn_more: 'Mehr erfahren'
   contact_our_team: 'Kontaktieren Sie unser Mobility Consulting Team!'
   language: 'Sprache'
@@ -16,6 +19,14 @@ de:
       imprint: 'Impressum'
       about_us: 'Über uns'
       contact_us: 'Kontaktieren Sie uns'
+      economy: 'Ökonomie'
+      multimodality: 'Multimodalität'
+      shared_mobility: 'Shared Mobility'
+      electric_mobility: 'Elektromobilität'
+      digitalisation: 'Digitalisierung'
+
+    about:
+      header: 'Das zeichnet uns aus.'
 
     contact:
       contact_us: 'Kontaktieren Sie uns'

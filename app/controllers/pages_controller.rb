@@ -13,4 +13,19 @@ class PagesController < ApplicationController
 
   def privacy
   end
+
+  def economy
+  end
+
+  def multimodal
+  end
+
+  def shared_mobility
+  end
+
+  def electric_mobility
+  end
+
+  def digitalisation
+  end
 end

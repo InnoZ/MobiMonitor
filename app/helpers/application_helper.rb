@@ -1,8 +1,11 @@
 module ApplicationHelper
   def pages
     %w[
-      about
-      contact
+      economy
+      multimodality
+      shared_mobility
+      electric_mobility
+      digitalisation
     ]
   end
 end
