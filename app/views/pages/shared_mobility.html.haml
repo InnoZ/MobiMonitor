@@ -3,4 +3,36 @@
     .row
       .col-md-8.col-sm-9
         %header
-          %h1= t('views.nav.shared_mobility')
+          %h1= t('topics.shared_mobility.title')
+          %p= t('views.services.header_text')
+
+- @services.each_with_index do |service, index|
+  /change order of image and list for the second section
+  - to_the_right = index == 1 ? 'col-md-push-7' : 0
+  - to_the_left = index == 1 ? 'col-md-pull-5' : 0
+
+  %section{id: service, class: ('light-bg' if service == 'monitoring')}
+    .container.inner-top
+      .row
+        .col-md-8.col-sm-9.center-block.text-center
+          %header
+            %h1= "#{service.capitalize} as a Service"
+            %p= t("views.services.#{service}_intro")
+
+      .row
+        .col-md-5.col-sm-6.inner-top.inner-right-xs{class: to_the_right}
+          %h3.sidelines.text-center
+            %span= t('examples')
+          %ul.arrowed
+            = t("views.services.#{service}_list").html_safe
+
+        .col-md-7.col-sm-6.inner-top.inner-left-xs.inner-right-xs{class: to_the_left}
+          %figure
+            = image_tag "services/#{service}_composition.jpg"
+          - if index == 0
+            .image-source-overlay
+              = "#{t('source')}: Rawpixel.com/Shutterstock"
+
+%section.light-bg
+  .container.inner
+    = render 'clients'

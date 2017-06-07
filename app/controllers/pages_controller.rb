@@ -28,4 +28,7 @@ class PagesController < ApplicationController
 
   def digitalisation
   end
+
+  def topics
+  end
 end

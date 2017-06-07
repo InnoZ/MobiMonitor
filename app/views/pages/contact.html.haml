@@ -5,6 +5,8 @@
         %header
           %h1= t('views.contact.contact_us')
           %p= t('views.contact.contact_us_text')
+          %ul
+            = t("views.contact.contact_us_list").html_safe
     .row
       .col-sm-12
         .row
@@ -17,7 +19,7 @@
               %tr
                 %th.table-icon-cell
                   .icon-location
-                %th= t('innoz') + '-' + t('innoz_address') 
+                %th= t('innoz') + '-' + t('innoz_address')
               %tr
                 %th.table-icon-cell
                   .icon-mobile

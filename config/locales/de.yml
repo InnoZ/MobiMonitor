@@ -30,7 +30,13 @@ de:
 
     contact:
       contact_us: 'Kontaktieren Sie uns'
-      contact_us_text: 'Möchten Sie mehr wissen? Wir freuen uns von Ihnen zu hören!'
+      contact_us_text: 'Haben Sie themenspezifische Fragen oder Anregungen? Wenden Sie sich gerne an die jeweiligen Ansprechpartner des Mobilitätsmonitors:'
+      contact_us_list: >
+        <li><a href="https://www.innoz.de/de/profile/frank-hunsicker">Frank Hunsicker</a>&nbsp;(Verkehrsträger – Ökonomischer Rahmen und modale Sicht)</li>
+        <li><a href="https://www.innoz.de/de/profile/robert-schoenduwe">Robert Schönduwe</a>&nbsp;&amp;&nbsp;<a href="https://www.innoz.de/de/profile/lena-damrau">Lena Damrau</a>&nbsp;(Multi- und Intermodalität)</li>
+        <li><a href="https://www.innoz.de/de/profile/benno-bock">Benno Bock</a> (Shared Mobility)</li>
+        <li><a href="https://www.innoz.de/de/profile/vipul-toprani">Vipul Toprani</a> (Nachhaltige&nbsp;Mobilität / Elektromobilität)</li>
+        <li><a href="https://www.innoz.de/de/profile/christian-scherf">Christian Scherf,</a> <a href="https://www.innoz.de/de/profile/dr-helga-jonuschat">Helga Jonuschat</a> &amp;&nbsp;<a href="https://www.innoz.de/de/profile/sina-nordhoff">Sina Nordhoff</a>&nbsp;(Mobilitätsumfeld Digitalisierung)</li>
 
     footer:
       part_of_innoz: 'Wir sind Teil des InnoZ.'

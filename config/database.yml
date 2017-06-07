@@ -1,14 +1,14 @@
 test:
   adapter: postgresql
   pool: 5
-  database: innoz_rails_test
+  database: mobimonitor_test
 
 development:
   adapter: postgresql
   pool: 5
-  database: innoz_rails_development
+  database: mobimonitor_development
 
 production:
   adapter: postgresql
   pool: 5
-  database: innoz_rails_production
+  database: mobimonitor_production

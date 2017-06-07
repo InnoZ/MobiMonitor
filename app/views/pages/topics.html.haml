@@ -1,0 +1,31 @@
+%section#references
+  .container.inner-sm
+    .row
+      .col-md-8.col-sm-9.center-block.text-center
+        %header
+          %h1= t('views.references.header')
+          %p= t('views.references.header_text')
+
+    .row.inner-top-sm
+      .col-sm-12.portfolio
+        %ul.filter.text-center
+          %li
+            %a.active{'data-filter' => '*', href: '#'}= t('all')
+          %li
+            %a{'data-filter' => '.economy', href: '#'}= t('all')
+          %li
+            %a{'data-filter' => '.multimodal', href: '#'}= t('all')
+          %li
+            %a{'data-filter' => '.shared_mobility', href: '#'}= t('all')g
+
+        %ul.isotope.items.col-3.gap
+          - Topics.all.each do |topic|
+            %li.item.thumb{class: topic.categories}
+              %figure{title: t("topics.#{topic.name}.title")}
+                .icon-overlay.icn-link
+                  = link_to send(topic.name + '_path') do
+                    = image_tag "topics/#{topic.name}/preview.jpg"
+                %figcaption.bordered.no-top-border
+                  .info
+                    %h4= t("topics.#{topic.name}.title")
+                    %p= topic.categories.join(' | ')
