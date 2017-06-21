@@ -31,12 +31,6 @@
             = link_to t('locale_name', locale: language), locale: language
           %br
 
-      .col-sm-3.inner
-        %h4= t('service')
-        - pages.each do |p|
-          = link_to t('views.nav.' + p), send(p + '_path')
-          %br
-
   .footer-bottom
     .container.inner
       %p.pull-left= "© #{Date.today.year} InnoZ GmbH. All rights reserved."
