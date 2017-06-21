@@ -13,3 +13,8 @@
           = link_to root_path do
             .navbar-brand
               = image_tag 'logo_innoz_rails_grey.png', class: 'logo'
+          %ul.nav.navbar-nav
+            - Topic.all.each do |t|
+              %li
+                = link_to t.name, topic_path(t)
+                
