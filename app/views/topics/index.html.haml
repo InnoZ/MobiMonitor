@@ -1,4 +1,4 @@
 - @topics.each do |t|
   %h1= t.name
   - t.subtopics.each do |s|
-    %h2= s.name
+    = link_to s.name, subtopic_path(s.id)    

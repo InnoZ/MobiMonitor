@@ -18,3 +18,13 @@ topics.each do |topic|
     topic_model.subtopics.create(name: s)
   end
 end
+
+# filling subtopic with fake posts - can be removed later
+Subtopic.all.each do |s|
+  rand(1..3).times do
+    s.posts.create(
+      name: Faker::Hipster.sentence(3),
+      content: Faker::Hipster.paragraph(rand(2..10))
+    )
+  end
+end

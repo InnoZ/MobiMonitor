@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   get 'privacy', to: 'pages#privacy', as: :privacy
 
   resources :topics
+  resources :subtopics
+  resources :posts
 end
