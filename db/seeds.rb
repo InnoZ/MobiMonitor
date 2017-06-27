@@ -6,8 +6,11 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 topics = [
+  ['Ökonomie', ['Ökonomische Rahmenbedingungen', 'Modale Sicht auf die Verkehrsmittel']],
+  ['Multimodalität', ['intermodale Arbeitswege', 'multimodale Nutzer', 'Verkehrsmittelkombinationen']],
   ['Shared Mobility', ['Carsharing', 'Bikesharing', 'Scootersharing']],
-  ['Elektromobilität', ['Energiemarktumfeld', 'Wasserstofftankstellen']]
+  ['Elektromobilität', ['Energiemarktumfeld', 'Wasserstofftankstellen']],
+  ['Digitalisierung', ['automatisiertes Fahren', 'teilautomatisiertes MIV', 'automatisierter ÖSPV', 'Routing-Apps', 'Mobilticketing ÖPNV', 'elektronische Semestertickets']],
 ]
 
 topics.each do |topic|
