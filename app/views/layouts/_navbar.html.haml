@@ -14,6 +14,7 @@
             .navbar-brand
               = image_tag 'logo_innoz_rails_grey.png', class: 'logo'
           %ul.nav.navbar-nav
-            - pages.each do |p|
-              %li{class: ('active-navbar-li' if current_page?(controller: 'pages', action: p))}
-                = link_to t('views.nav.' + p), send(p + '_path')
+            - Topic.all.each do |t|
+              %li
+                = link_to t.name, topic_path(t)
+                

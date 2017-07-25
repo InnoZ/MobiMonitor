@@ -5,3 +5,29 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+topics = [
+  ['Ökonomie', ['Ökonomische Rahmenbedingungen', 'Modale Sicht auf die Verkehrsmittel']],
+  ['Multimodalität', ['intermodale Arbeitswege', 'multimodale Nutzer', 'Verkehrsmittelkombinationen']],
+  ['Shared Mobility', ['Carsharing', 'Bikesharing', 'Scootersharing']],
+  ['Elektromobilität', ['Energiemarktumfeld', 'Wasserstofftankstellen']],
+  ['Digitalisierung', ['automatisiertes Fahren', 'teilautomatisiertes MIV', 'automatisierter ÖSPV', 'Routing-Apps', 'Mobilticketing ÖPNV', 'elektronische Semestertickets']],
+]
+
+topics.each do |topic|
+  topic_name = topic[0]
+  subtopic_names = topic[1]
+  topic_model = Topic.create(name: topic_name)
+  subtopic_names.each do |s|
+    topic_model.subtopics.create(name: s)
+  end
+end
+
+# filling subtopic with fake posts - can be removed later
+Subtopic.all.each do |s|
+  rand(1..3).times do
+    s.posts.create(
+      name: Faker::Hipster.sentence(3),
+      content: Faker::Hipster.paragraph(rand(2..10))
+    )
+  end
+end

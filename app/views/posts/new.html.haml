@@ -1,0 +1,5 @@
+= form_for(@post) do |f|
+  = f.text_field :name
+  = f.text_area :content
+  = f.collection_select :subtopic_id, Subtopic.all.sort_by(&:hierarchical_name), :id, :hierarchical_name
+  = f.submit 'Speichern'

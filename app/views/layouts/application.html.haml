@@ -17,5 +17,7 @@
   %body
     = render 'layouts/navbar'
     %main
-      = yield
+      .container.inner-sm
+        .row
+          = yield
     = render 'layouts/footer'
